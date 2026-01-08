@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "Please cite the MOP paper and the DP3 work when using this project."
+title: "MOP: A Multimodal Object-Aware Policy for Robotic Manipulation via Geometry-Guided Fusion and Trajectory Prediction"
+type: software
+authors:
+  - family-names: Zhang
+    given-names: Keyu
+  - family-names: Yang
+    given-names: Yicheng
+preferred-citation:
+  type: article
+  title: "MOP: A Multimodal Object-Aware Policy for Robotic Manipulation via Geometry-Guided Fusion and Trajectory Prediction"
+  authors:
+    - family-names: Zhang
+      given-names: Keyu
+    - family-names: Yang
+      given-names: Yicheng
+    - family-names: Wang
+      given-names: Lifeng
+    - family-names: Li
+      given-names: Ruijiao
+    - family-names: Ding
+      given-names: Jie
+    - family-names: Li
+      given-names: Cong
+    - family-names: Shang
+      given-names: Huiliang
+    - family-names: Xu
+      given-names: Yin
+  journal: "IEEE Robotics and Automation Letters"
+  volume: 11
+  issue: 9
+  start: 10114
+  end: 10121
+  year: 2026
+  doi: 10.1109/LRA.2026.3710341

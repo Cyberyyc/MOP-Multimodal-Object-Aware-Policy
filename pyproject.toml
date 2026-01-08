@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mop-dp3"
+version = "0.1.0"
+description = "DP3-based core modules for Multimodal Object-aware Policy"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.2", "torchvision>=0.17", "numpy>=1.24,<2", "diffusers==0.30.3", "einops>=0.6", "termcolor", "zarr>=2.16,<3", "PyYAML>=6"]
+
+[tool.setuptools.packages.find]
+include = ["mop*"]

@@ -1,0 +1,25 @@
+# MOP Table I settings; robot dimensions are supplied by the application.
+policy:
+  horizon: 16
+  n_obs_steps: 2
+  n_action_steps: 8
+  object_horizon: 16
+  feature_dim: 128
+  down_dims: [512, 1024, 2048]
+  diffusion_steps: 100
+  inference_steps: 10
+  lambda_opp: 1.0
+  lambda_reg: 0.01
+  # Configurable encoder/OPP choices.
+  state_feature_dim: 64
+  transformer_width: 128
+  latent_dim: 32
+  transformer_heads: 4
+  transformer_layers: 2
+  modality_dropout: 0.1
+  gate_init: 0.1
+  kl_weight: 0.01
+  pretrained_rgb: false
+training:
+  batch_size: 128
+  learning_rate: 0.0001
