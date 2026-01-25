@@ -36,7 +36,10 @@ class ImageKeypointEncoder(nn.Module):
     def forward(self, rgb):
         if rgb.ndim != 4 or rgb.shape[1] != 3:
             raise ValueError("RGB input must be (B,3,H,W).")
-        rgb = rgb.to(self.mean.dtype) / 255 if rgb.dtype == torch.uint8 else rgb
+        is_uint8 = rgb.dtype == torch.uint8
+        rgb = rgb.to(self.mean.dtype)
+        if is_uint8:
+            rgb = rgb / 255
         return self.pool(self.backbone((rgb - self.mean) / self.std))
 
 

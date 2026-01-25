@@ -28,7 +28,7 @@ def test_full_modality_dropout_preserves_geometry_and_state():
     encoder.train()
     cloud, state = torch.randn(2, 20, 3), torch.randn(2, 5)
     output_a = encoder(cloud, torch.rand(2, 3, 64, 64), state)
-    output_b = encoder(cloud, torch.rand(2, 3, 64, 64), state)
+    output_b = encoder(cloud, torch.rand(2, 3, 64, 64, dtype=torch.float64), state)
     torch.testing.assert_close(output_a, output_b)
 
 
